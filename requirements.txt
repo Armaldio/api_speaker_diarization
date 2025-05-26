@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+soundfile
+noisereduce
+scipy
+# pyannote.audio will pull torch, torchaudio, and other dependencies.
+# Ensure you install a version compatible with your Python and CUDA (if using GPU)
+# For example, for pyannote.audio 2.x or 3.x:
+pyannote.audio>=3.1
+# For torch, it's often better to install it separately based on your system (CPU/GPU)
+# e.g., pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu118 (for CUDA 11.8)
+# or pip install torch torchaudio (for CPU version)
+# The pyannote.audio dependency usually handles a compatible torch version, but check its docs.
+# If you encounter issues, try installing torch and torchaudio manually first.
+# Example:
+# torch>=2.0.0
+# torchaudio>=2.0.0
